@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      margin-bottom: 40px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 150px);
+      gap: 30px;
+    }
+    .grid-button {
+      background-color: #696767;
+      color: #03dac6;
+      border: none;
+      border-radius: 12px;
+      padding: 40px 20px;
+      font-size: 18px;
+      text-align: center;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .grid-button:hover {
+      background-color: #018786;
+      color: #ffffff;
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome To e-data</h1>
+  <div class="grid-container">
+    <button class="grid-button" onclick="location.href='members.html'">Members</button>
+    <button class="grid-button" onclick="location.href='payments.html'">Payments</button>
+    <button class="grid-button" onclick="location.href='attendance.html'">Attendance</button>
+    <button class="grid-button" onclick="location.href='it-support.html'">IT Support</button>
+  </div>
+</body>
+</html>
